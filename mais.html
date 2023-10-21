@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon"
+        href="https://cdn.discordapp.com/attachments/660572308292894721/1151625930419216394/Sem_Titulo-dourado.png?ex=653049b9&is=651dd4b9&hm=9d1d850730af51fb33b804b45b7e1803e513b1a2d900ed6f1bcaa423b444568e&">
+    <style>
+        /* Estilos para a barra de navegação */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(49, 49, 49);
+        }
+
+        .navbar {
+            background-color: rgb(255, 194, 107);
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: rgb(49, 49, 49);
+            text-align: center;
+            padding: 25px 20px;
+            text-decoration: none;
+            border: rgb(255, 194, 107);
+        }
+
+        .navbar a:hover {
+            background-color: rgb(255, 194, 107);
+            color: rgb(49, 49, 49);
+        }
+
+        .navbar .logo {
+            float: left;
+            padding: 7px;
+        }
+
+        /* Estilos para o contêiner */
+        .container {
+            background: rgb(255, 194, 107);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(49, 49, 49);
+            overflow: hidden;
+            width: 1450px;
+            margin: 150px 0 50px 50px;
+            text-align: center;
+        }
+
+        /* Estilos para divisórias de histórias */
+        .story-divider {
+            width: 82%;
+            height: 2px;
+            background: #333; /* Cor da divisória */
+            margin: 18px auto; /* Espaçamento ao redor da divisória */
+        }
+
+        /* Estilos para o título da história */
+        .story-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 11px 0;
+            cursor: pointer;
+        }
+
+        /* Estilos para o conteúdo da história */
+        .story-content {
+            font-size: 18px;
+            margin: 15px 0;
+            display: none;
+        }
+
+        /* Estilos para imagens */
+        .story-image {
+            max-width: 150%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <a class="logo" href="home.html"><img
+                src="https://cdn.discordapp.com/attachments/660572308292894721/1151612724997009429/Sem_Titulo-2.png?ex=653977ed&is=652702ed&hm=6fe90c3941a553daa5ca1efddadac04a530469f3c8879905a105560de987b89d&"
+                alt="Your Logo"></a>
+    </nav>
+
+    <!-- Divisória e primeira história com botão para abrir/fechar conteúdo -->
+    <div class="container">
+        <div class="story-divider"></div>
+        <div class="story-title" onclick="toggleStory(1)">Lore do servidor</div>
+        <div class="story-content" id="story1">
+           <a> Tudo começou com uma revolta em New Horizon, em que os seus habitantes irritaram-se pelas suas condições de vida.
+            Com o passar dos anos a revolta foi crescendo oque levou à intervenção do governo e da delegacia.
+             Como uma resposta inesperada, o governo e a delegacia uniram forças e impôram restrições ainda mais rígidas, 
+            especialmente contra os piratas e os verdadeiros cowboys onde a unica regra que tinham era nunca deixar umque habitavam a costa do estado contorverso. Com o mar
+             como seu único refúgio, os piratas tiveram que se retirar para Guarma, uma remota ilha caribenha. Lá, enfrentaram desafios ainda maiores, incluindo o combate com as forças locais e a busca de um novo lar.
+            À medida que os conflitos se intensificaram em New Horizons, as tribos nativas, embora indomáveis, foram forçadas a abandonar suas terras. Em uma jornada emocionante, eles partiram da reserva, em busca de um novo local para se estabelecer e preservar suas tradições. Essa migração forçada os levou a terras desconhecidas, onde teriam que lutar para sobreviver e manter sua cultura viva.  </a>
+        </div>
+    </div>
+
+    <!-- Divisória e segunda história com botão para abrir/fechar conteúdo -->
+    <div class="container">
+        <div class="story-divider"></div>
+        <div class="story-title" onclick="toggleStory(2)">História 2</div>
+        <div class="story-content" id="story2">
+            <img class="story-image"
+                src="URL_DA_IMAEM_PARA_HISTORIA_2.jpg"
+                alt="Imagem da História 2">
+            Este é o conteúdo da segunda história. Adicione mais histórias conforme necessário.
+        </div>
+    </div>
+
+    <script>
+        function toggleStory(storyNumber) {
+            var storyContent = document.getElementById('story' + storyNumber);
+            if (storyContent.style.display === 'none' || storyContent.style.display === '') {
+                storyContent.style.display = 'block';
+            } else {
+                storyContent.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
