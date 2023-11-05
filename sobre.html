@@ -1,132 +1,240 @@
 <!DOCTYPE html>
 <html>
+ <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/660572308292894721/1151625930419216394/Sem_Titulo-dourado.png?ex=653049b9&is=651dd4b9&hm=9d1d850730af51fb33b804b45b7e1803e513b1a2d900ed6f1bcaa423b444568e&">
 <head>
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/660572308292894721/1151625930419216394/Sem_Titulo-dourado.png?ex=653049b9&is=651dd4b9&hm=9d1d850730af51fb33b804b45b7e1803e513b1a2d900ed6f1bcaa423b444568e&">
-    <title>Novo Horizonte | SOBRE</title>
-    <style>
+    <div class="navbar">
+        <a class="logo" href="#"><img src="https://cdn.discordapp.com/attachments/660572308292894721/1151612724997009429/Sem_Titulo-2.png?ex=653977ed&is=652702ed&hm=6fe90c3941a553daa5ca1efddadac04a530469f3c8879905a105560de987b89d&" alt="Your Logo"></a>
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#services">Mais</a>
+        <a href="#contact">Redes sociais</a>
+    </div>
+
+  <style>
+       
+       
+       
+       
+       
+       
+       /* Navbar */
+       
+        .navbar {
+            background-color: rgb(255, 194, 107); /*cor da nav bar*/
+            overflow: hidden;
+        }
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: rgb(49, 49, 49);
         }
-
-        .navbar {
-            background-color: rgb(255, 194, 107);
-            overflow: hidden;
-        }
-
+       
         .navbar a {
             float: left;
             font-size: 16px;
-            color: rgb(49, 49, 49);
+            color: #242424;
             text-align: center;
-            padding: 25px 22px;
+            padding: 26px 20px;
             text-decoration: none;
-            border: 1px solid rgb(255, 194, 107);
+            border: rgb(255, 194, 107);
         }
-
+        
         .navbar a:hover {
-            background-color: rgb(255, 194, 107);
-            color: rgb(49, 49, 49);
-        }
+            background-color: rgb(49, 49, 49);
+            color: rgb(255, 194, 107);
+        } 
 
         .navbar .logo {
             float: left;
-            padding: 7px;
+            padding: 8px;
         }
 
-        .footer {
-            background-color: rgb(255, 194, 107);
+        
+
+        /* novidades */
+       
+        
+         /* Style the container for the image slider */
+
+        .slider-container {
+            width: 1000px;
+            max-width: 10000px;
+            margin:  auto;
+            overflow: hidden;
+        }
+
+      
+        /* tamanho das imagens */
+        
+        .slide img {
+            width: 1000px;
+            height: 600px;
+        }
+
+        /* butoes dos slides */
+        
+        .slider-nav {
+            text-align: center;
+        }
+
+        .slider-nav button {
+            background: rgb(255, 194, 107);
+            color: #242424;
+            border: none;
+            padding: 8px 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+     
+       
+        /* texto header */
+     header {
+            text-align: center;
             padding: 20px;
-            text-align: center;
-            color: rgb(49, 49, 49);
+            color: rgb(245, 181, 92);
+            border: 2px solid #333;
+            padding: 10px;
+            
         }
-
-        .footer-logo img {
-            max-width: 100px;
-            margin-bottom: 10px;
-        }
-
-        .social-media img {
-            width: 30px;
-            margin: 0 10px;
-        }
-
-        .owners-info {
-            margin-top: 10px;
-        }
-
-        /* Estilo para a imagem no centro */
-        .story-image {
-            max-width: 3000px;
-            height: 300px;
-            display: block;
-            margin-right: auto;
-        }
-
-        /* Estilo para a segunda imagem no rodapé */
-        .footer-image-container {
-            text-align: center;
-        }
-
-        .footer-image {
-            max-width: 2000px;
-            height: 1000px;
-            display: block;
-        }
-
-        .footer-text {
-            text-align: right;
-            margin-top: 100px; /* Adiciona margem superior para mover o texto para baixo */
-            margin-left: 910px;
-            color: rgb(255, 194, 107); /* Cor do texto */
-            font-size: 25px; /* Tamanho da fonte */
-            font-family: 'Arial', sans-serif; /* Estilo da fonte */
-            background-color: rgb(49, 49, 49); /* Cor de fundo */
-            padding: 15px; /* Espaçamento interno */
-        }
+    
     </style>
-</head>
 
 <body>
-    <!-- Barra de navegação -->
-    <nav class="navbar">
-        <a class="logo" href="index.html">
-            <img src="https://cdn.discordapp.com/attachments/660572308292894721/1151612724997009429/Sem_Titulo-2.png?ex=653977ed&is=652702ed&hm=6fe90c3941a553daa5ca1efddadac04a530469f3c8879905a105560de987b89d"
-                alt="Your Logo">
-        </a>
-    </nav>
     
-    <div class="footer-text">
-     
-        <p> 
-             
-        </p>
-    </div>
+    <header>
+        <h1>Novidades</h1>
+    </header>
 
-    <!-- Segunda imagem (no rodapé) com texto à direita -->
-    <div class="footer-image-container">
-        <img class="footer-image"
-             src="https://cdn.discordapp.com/attachments/660572308292894721/1165956215650648136/Sem_Titulo-6.png?ex=6548bc58&is=65364758&hm=2901e47e175151ede23d5d5e7189247cb7a2775189e2bd7ad5c15b6046370888&" 
-             alt="Sua Imagem no Rodapé">
-    </div>
 
-    <!-- Rodapé -->
-      <!-- Rodapé -->
-      <div class="footer">
-        <div class="footer-logo">
-            <img src="https://cdn.discordapp.com/attachments/660572308292894721/1151613061120151652/Sem_Titulo-3.png?ex=6542b2bd&is=65303dbd&hm=2289cffc23334a50fce2c744404735c16f2841b6fb4c8521bd7911a48332c365&" alt="Seu Logo">
-        </div>
-        <div class="social-media">
-            <a href="https://discord.gg/R8mch2nBmB"><img src="https://cdn.discordapp.com/attachments/660572308292894721/1165600136190234654/Sem_Titulo-1.png?ex=654770b8&is=6534fbb8&hm=2cd54468a26fca4c8d7fcb9ccc2b29f1812c079fc17ed222d52b26f66838b86e&" alt="Discord"></a>
-            <a href="https://www.youtube.com/@NovoHorizonte-RP"><img src="https://cdn.discordapp.com/attachments/660572308292894721/1165600136999735379/Sem_Titulo-1.png?ex=654770b8&is=6534fbb8&hm=e80a4229e7c0f8eacb4e668df7f32dcf4677f093c623dc2bfd988ecbc8752ccf&" alt="YouTube"></a>
-            <a href="url_do_seu_perfil_do_instagram"><img src="https://cdn.discordapp.com/attachments/660572308292894721/1165600136685158400/Sem_Titulo-1.png?ex=654770b8&is=6534fbb8&hm=3c34b718814c37f2d3a9e327face3bd791c70e6ca86ca11a6aa97e081757f2df&" alt="TikTok"></a>
-        </div>
-        <div class="owners-info">
-            <p>Fundadores: Melo & Marksman</p>
-            <p>Desenvolpers: 76MIX & Marksman</p>
-        </div>
+<div class="slider-container">
+    <div class="slide">
+      
+        <a href="https://youtu.be/XfYWXdQr7I0">
+         <img src="https://cdn.discordapp.com/attachments/660572308292894721/1155911387005079648/image.png?ex=6536a65e&is=6524315e&hm=9aff95e2f832397c007cde4bf139d004ee01004cdba398ded5534f26255b0fb1&" alt="Image 1">
+        </a> 
+
     </div>
-</body>
+    <div class="slide">
+        <img src="https://cdn.discordapp.com/attachments/1079058403747442721/1163889993664712784/image1.png?ex=65413806&is=652ec306&hm=4053244f3f184a21acaa6a564fc1e1888d7dbc7c55d3e8a78450a45ec6ca9bdc&" alt="Image 2">
+    </div>
+    <div class="slide">
+        <img src="https://cdn.discordapp.com/attachments/1079058403747442721/1163889994100908052/imageq.png?ex=65413806&is=652ec306&hm=d7e690b8635390945e8cb2ac24f3161b51caf2902292145f89d7d494e4b80c0d&" alt="Image 3">
+    </div>
+</div>
+
+<div class="slider-nav">
+    <button onclick="changeSlide(-1)">Anterior</button>
+    <button onclick="changeSlide(1)">Proximo</button>
+</div>
+
+<script>
+    let slideIndex = 1;
+
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+        showSlide(slideIndex += n);
+    }
+
+    function showSlide(n) {
+        let slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+ </script>
+  </style>  
+
+ <body>
+   <style> 
+   
+   /*IMAGEM1*/
+  /*-------*/
+
+   .imagem-animada {
+     width: 80px; 
+     height: 80px; 
+     transition: transform 0.3s;
+   }
+
+    /* Estilo da imagem quando o cursor passa sobre ela */
+    .imagem-animada:hover {
+     transform: scale(1.1); /* Ampliaçao*/
+    }
+        
+    .container {
+    margin-top: 10px;    text-align: left; /* Centralizar a imagem */
+    }
+ 
+  .texto-sobreposto {
+    position: absolute; 
+    top: 90%; 
+    left: 10%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(255, 194, 107);
+ }
+
+  
+
+
+
+   /*IMAGEM2*/
+  /*-------*/
+
+  .imagem-animada1 {
+     width: 80px; 
+     height: 80px; 
+     transition: transform 0.3s;
+   }
+
+    /* Estilo da imagem quando o cursor passa sobre ela */
+    .imagem-animada1:hover {
+     transform: scale(1.1); /* Ampliaçao do logo*/
+    }
+        
+    .container1 {
+    margin-top: 10px;    
+    text-align: center; /* Centralizar a imagem */
+    }
+ 
+  .texto-sobreposto1 {
+    position: absolute; 
+    top: 100%; 
+    left: 11%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(255, 194, 107);
+ }
+
+  
+
+   </style>
+
+  </head>
+  <body>
+    
+    <div  class="container">
+        <img class="imagem-animada" src="https://cdn.discordapp.com/attachments/660572308292894721/1151611300863033455/Sem_Titulo-1.png?ex=6539769a&is=6527019a&hm=facf0c7e696204cbcce22feed2691f4c99cc2bbac2f3cca6dd7ffcbf2272a2aa&" alt="Imagem Animada1">
+    </div>    
+        <img class="imagem-animada1" src="https://cdn.discordapp.com/attachments/660572308292894721/1151611300863033455/Sem_Titulo-1.png?ex=6539769a&is=6527019a&hm=facf0c7e696204cbcce22feed2691f4c99cc2bbac2f3cca6dd7ffcbf2272a2aa&" alt="Imagem Animada1">
+      <div class="texto-sobreposto"> Fundador | Melo & Marksman </div>
+     <div class="texto-sobreposto1"> Desenvolper | Marksman & 76MIX </div>
+    
+
+    
+    
+    
+   
+    
+  </body>
+ 
 </html>
