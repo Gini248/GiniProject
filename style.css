@@ -45,6 +45,14 @@ body {
     height: 600px;
 }
 
+.nhg{
+    margin-top: 10px;
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+    margin-left: auto;
+    
+}
 /* butoes para os slides */
 .slider-nav {
     text-align: center;
